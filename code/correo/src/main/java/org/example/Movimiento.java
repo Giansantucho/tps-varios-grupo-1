@@ -12,9 +12,16 @@ public Movimiento(Sucursal sucursal, LocalDate fecha){
   this.sucursal = sucursal;
   this.fecha = fecha;
 }
-  
 
-public Sucursal getSucursal(){
+  public Boolean getTieneCatero() {
+    return tieneCatero;
+  }
+
+  public void setTieneCatero(Boolean tieneCatero) {
+    this.tieneCatero = tieneCatero;
+  }
+
+  public Sucursal getSucursal(){
   return sucursal;
 }
 

@@ -7,5 +7,14 @@ public class Persona {
     private String Localidad;
     private TipoPersona tipo;
 
+    public Integer getCodigoPostal() {
+        return codigoPostal;
+    }
+
+    public Persona(String nombre, String apellido, Integer codigoPostal) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.codigoPostal = codigoPostal;
+    }
 }
 

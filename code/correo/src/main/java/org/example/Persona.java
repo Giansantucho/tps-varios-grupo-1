@@ -1,4 +1,5 @@
 package org.example;
+import java.util.Scanner;
 
 public class Persona {
     private String nombre;
@@ -11,9 +12,12 @@ public class Persona {
         return codigoPostal;
     }
 
-    public Persona(String nombre, String apellido, Integer codigoPostal) {
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Persona(String nombre, Integer codigoPostal) {
         this.nombre = nombre;
-        this.apellido = apellido;
         this.codigoPostal = codigoPostal;
     }
 }

@@ -15,6 +15,10 @@ public class Sucursal{
     return codigoPostal;
   }
 
+  public Integer getNumero() {
+    return numero;
+  }
+
   public Sucursal(Integer numero, Integer codigoPostal) {
     this.numero = numero;
     this.codigoPostal = codigoPostal;

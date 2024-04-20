@@ -2,6 +2,7 @@ package org.example;
 
 import java.rmi.MarshalledObject;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.chrono.ChronoLocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +20,7 @@ public class Envio {
 
   public void registrarMovimiento(Sucursal sucursal){
     
-      LocalDate fecha = LocalDate.now();
+      LocalDateTime fecha = LocalDateTime.now();
       Movimiento movimiento = new Movimiento(sucursal, fecha);
       
       this.camino.add(movimiento);

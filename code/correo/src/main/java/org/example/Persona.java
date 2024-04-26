@@ -1,24 +1,23 @@
 package org.example;
-import java.util.Scanner;
 
 public class Persona {
     private String nombre;
     private String apellido;
     private Integer codigoPostal;
-    private String Localidad;
+    private String localidad;
     private TipoPersona tipo;
 
-    public Integer getCodigoPostal() {
-        return codigoPostal;
+    public String getLocalidad() {
+        return localidad;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public Persona(String nombre, Integer codigoPostal) {
+    public Persona(String nombre, String localidad) {
         this.nombre = nombre;
-        this.codigoPostal = codigoPostal;
+        this.localidad = localidad;
     }
 }
 

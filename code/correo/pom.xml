@@ -21,7 +21,7 @@
                 <version>3.1</version>
                 <configuration>
                     <source>1.17</source>
-                    <tarjet>1.17</tarjet>
+                    <target>1.17</target>
                 </configuration>
             </plugin>
         </plugins>

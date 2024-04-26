@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sucursal{
-  private Integer numero;
+  private int numero;
   private String localidad;
   private String domicilio;
-  private List<TipoEmpleado> empleados;
+  private List<Empleado> empleados;
   private List<Envio> envios;
-  private Integer codigoPostal;
 
-  public Integer getCodigoPostal() {
-    return codigoPostal;
-  }
-
-  public Integer getNumero() {
+  public int getNumero() {
     return numero;
   }
 
-  public Sucursal(Integer numero, Integer codigoPostal) {
+  public String getLocalidad() {
+    return localidad;
+  }
+
+  public Sucursal(Integer numero, String domicilio) {
     this.numero = numero;
-    this.codigoPostal = codigoPostal;
+    this.empleados = new ArrayList<>();
+    this.envios = new ArrayList<>();
   }
 }

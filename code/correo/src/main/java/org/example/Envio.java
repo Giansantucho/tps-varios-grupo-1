@@ -10,23 +10,23 @@ import java.util.List;
 
 public class Envio {
 
-  protected Persona destinatario;
-  protected Persona remitente;
-  protected Double precio;
-  protected Integer codigoRastreo;
-  protected TipoEmpleado cartero;
-  protected List<Movimiento> camino;
-  protected Boolean entregado;
+  private Persona destinatario;
+  private Persona remitente;
+  private Double precio;
+  private Integer codigoRastreo;
+  private Empleado cartero;
+  private List<Movimiento> camino;
+  private Boolean entregado;
 
-  public void registrarMovimiento(Sucursal sucursal){
+  public void registrarMovimiento(Sucursal sucursal, Empleado cartero){
     
       LocalDateTime fecha = LocalDateTime.now();
       Movimiento movimiento = new Movimiento(sucursal, fecha);
       
       this.camino.add(movimiento);
 
-      if (sucursal.getCodigoPostal() == destinatario.getCodigoPostal()){
-        ultimoMovimiento().setTieneCatero(Boolean.TRUE);
+      if (sucursal.getLocalidad() == destinatario.getLocalidad()){
+        this.cartero = cartero;
       }
   }
 
